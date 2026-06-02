@@ -11,15 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ControleDeGastos">
+
+        <activity android:name=".activity.ConfiguracaoActivity" />
+        <activity android:name=".activity.RelatorioActivity" />
+        <activity android:name=".activity.ListaDespesasActivity" />
+        <activity android:name=".activity.CadastroDespesaActivity" />
+        <activity android:name=".activity.CadastroReceitaActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
