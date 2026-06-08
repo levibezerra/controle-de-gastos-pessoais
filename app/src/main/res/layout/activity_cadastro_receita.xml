@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutCadastroReceita"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,36 +15,36 @@
             android:layout_height="wrap_content"
             android:text="Nova Receita"
             android:textSize="28sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtDescricaoReceita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Descrição"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:hint="Descrição" />
 
         <EditText
             android:id="@+id/edtValorReceita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:hint="Valor"
-            android:inputType="numberDecimal"
-            android:layout_marginTop="10dp"/>
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/edtDataReceita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Data"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:hint="Data" />
 
         <Button
             android:id="@+id/btnSalvarReceita"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Salvar Receita"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Salvar Receita" />
 
     </LinearLayout>
 

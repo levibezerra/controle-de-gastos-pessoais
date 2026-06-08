@@ -14,7 +14,6 @@
 
         <activity android:name=".activity.ConfiguracaoActivity" />
         <activity android:name=".activity.RelatorioActivity" />
-        <activity android:name=".activity.ListaDespesasActivity" />
         <activity android:name=".activity.CadastroDespesaActivity" />
         <activity android:name=".activity.CadastroReceitaActivity" />
 

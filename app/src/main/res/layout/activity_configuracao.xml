@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
 
     <LinearLayout
+        android:id="@+id/layoutConfiguracao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -14,49 +16,41 @@
             android:layout_height="wrap_content"
             android:text="Configurações"
             android:textSize="28sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#1E293B" />
 
-        <EditText
-            android:id="@+id/edtNomeUsuario"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do usuário"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <EditText
-            android:id="@+id/edtMeta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Meta mensal"
-            android:inputType="numberDecimal"
-            android:layout_marginTop="10dp"/>
-
-        <RadioGroup
-            android:id="@+id/radioTema"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
-
-            <RadioButton
-                android:id="@+id/rbClaro"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tema Claro"/>
+                android:text="Meta de Economia"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <RadioButton
-                android:id="@+id/rbEscuro"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/edtMeta"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tema Escuro"/>
-
-        </RadioGroup>
+                android:layout_marginTop="10dp"
+                android:hint="Meta mensal (R$)"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnSalvarConfiguracao"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="25dp"
             android:text="Salvar Configurações"
-            android:layout_marginTop="20dp"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 

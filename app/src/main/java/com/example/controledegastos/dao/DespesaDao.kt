@@ -9,7 +9,7 @@ import androidx.room.Update;
 import com.example.controledegastos.entity.Despesa;
 
 @Dao
-public interface DespesaDao {
+interface DespesaDao {
 
     @Insert
     suspend fun salvar(despesa: Despesa)
@@ -27,7 +27,11 @@ public interface DespesaDao {
     suspend fun totalDespesas(): Double?
 
     @Query("SELECT * FROM despesas WHERE categoria = :categoria")
-    suspend fun buscarPorCategoria(
-            categoria: String
-    ): List<Despesa>
+    suspend fun buscarPorCategoria(categoria: String): List<Despesa>
+
+    @Query("SELECT MAX(valor) FROM despesas")
+    suspend fun maiorGasto(): Double?
+
+    @Query("SELECT COUNT(*) FROM despesas")
+    suspend fun quantidadeDespesas(): Int
 }

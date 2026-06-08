@@ -15,63 +15,64 @@
             android:id="@+id/txtBoasVindas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Olá, Bem Vindo!"
+            android:textColor="#1E293B"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#1E293B"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="Controle seus gastos de forma simples"
-            android:textSize="16sp"
             android:textColor="#64748B"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="16sp" />
 
         <!-- Resumo Financeiro -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="#FFFFFF"
-            android:padding="16dp"
-            android:elevation="4dp">
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Resumo Financeiro"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtReceitas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Receitas: R$ 0,00"
-                android:textSize="18sp"
                 android:textColor="#16A34A"
-                android:layout_marginTop="10dp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txtDespesas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Despesas: R$ 0,00"
-                android:textSize="18sp"
                 android:textColor="#DC2626"
-                android:layout_marginTop="5dp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txtSaldo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Saldo: R$ 0,00"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="#2563EB"
-                android:layout_marginTop="5dp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Meta -->
@@ -96,16 +97,45 @@
                 android:id="@+id/txtMeta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Meta: R$ 500"
+                android:layout_marginTop="10dp"
+                android:text="Meta: R$ 500,00"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txtEconomizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economizado: R$ 0,00"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"/>
+                android:textColor="#16A34A"
+                android:layout_marginTop="5dp"/>
 
             <TextView
                 android:id="@+id/txtFaltam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Faltam: R$ 500"
-                android:textSize="18sp"/>
+                android:text="Faltam: R$ 500,00"
+                android:textSize="18sp"
+                android:textColor="#DC2626"
+                android:layout_marginTop="5dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressMeta"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="0"/>
+
+            <TextView
+                android:id="@+id/txtPercentualMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0% da meta atingida"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
         </LinearLayout>
 
         <!-- Botões -->
@@ -114,33 +144,33 @@
             android:id="@+id/btnReceita"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="15dp"
             android:text="+ Adicionar Receita"
-            android:textSize="18sp"
-            android:layout_marginTop="25dp"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnDespesa"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="2dp"
             android:text="+ Adicionar Despesa"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnRelatorio"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="2dp"
             android:text="Relatórios"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnConfiguracoes"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="2dp"
             android:text="Configurações"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 

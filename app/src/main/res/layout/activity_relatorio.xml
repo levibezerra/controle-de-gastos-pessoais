@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
 
     <LinearLayout
+        android:id="@+id/layoutRelatorio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -14,43 +16,44 @@
             android:layout_height="wrap_content"
             android:text="Relatórios"
             android:textSize="28sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#1E293B" />
 
         <TextView
             android:id="@+id/txtTotalReceitas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Receitas: R$ 0,00"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtTotalDespesas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Despesas: R$ 0,00"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtSaldoRelatorio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saldo: R$ 0,00"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtMaiorGasto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Maior gasto: R$ 0,00"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtQuantidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Quantidade de despesas: 0"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
     </LinearLayout>
 
